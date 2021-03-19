@@ -1,4 +1,4 @@
-const siteURL = "https://www.safestbettingsites.com"
+const siteURL = "https://safebetdev.wpengine.com"
 
 export const state = () => ({
   posts: [],

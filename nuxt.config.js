@@ -1,7 +1,7 @@
 import axios from "axios"
 let dynamicRoutes = () => {
   const routes = axios
-    .get("https://www.safestbettingsites.com/wp-json/wp/v2/posts?page=1&per_page=20")
+    .get("https://safebetdev.wpengine.com/wp-json/wp/v2/posts?page=1&per_page=20")
     .then(res => {
       return res.data.map(post => `/blog/${post.slug}`)
     })
@@ -10,7 +10,7 @@ let dynamicRoutes = () => {
 }
 
 export default {
-  mode: "universal",
+  target: 'static',
   /*
    ** Headers of the page
    */
